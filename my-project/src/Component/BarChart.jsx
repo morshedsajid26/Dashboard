@@ -1,41 +1,34 @@
-import React from 'react';
-import { Bar } from 'react-chartjs-2';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+import React from 'react'
 
 const BarChart = () => {
-  const data = {
-    labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
-    datasets: [
-      {
-        label: 'Expenses',
-        data: [200, 150, 300, 220, 180, 280, 240, 320],
-        backgroundColor: '#60A5FA', // Tailwind blue-500
-      },
-    ],
-  };
+  return (
+    <div className='w-[510px] h-[60px] flex justify-between items-end'>
+      <div className='w-4 h-[35px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[52px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[44px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[27px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[35px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[30px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[44px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[27px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[35px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[52px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[44px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[27px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[35px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[30px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[44px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[27px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[35px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[52px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[44px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[27px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[35px] bg-[#157AFF]/20 text-[0px]'>1</div>
+      <div className='w-4 h-[60px] bg-[#157AFF] text-[0px]'>1</div>
+      <div className='w-4 h-[44px] bg-[#157AFF]/20 text-[0px]'>1</div>
 
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-    },
-    scales: {
-      x: { grid: { display: false } },
-      y: { beginAtZero: true },
-    },
-  };
+    </div>
+  )
+}
 
-  return <Bar data={data} options={options} />;
-};
-
-export default BarChart;
+export default BarChart
